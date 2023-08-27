@@ -1,0 +1,14 @@
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.Data.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.Data.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.Data.AssemblyInfo.cs
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.Data.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\bin\Debug\net6.0\CustomerManagementHub.Data.deps.json
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\bin\Debug\net6.0\CustomerManagementHub.Data.runtimeconfig.json
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\bin\Debug\net6.0\CustomerManagementHub.Data.dll
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\bin\Debug\net6.0\CustomerManagementHub.Data.pdb
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.Data.dll
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\refint\CustomerManagementHub.Data.dll
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.Data.pdb
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.Data.genruntimeconfig.cache
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\ref\CustomerManagementHub.Data.dll

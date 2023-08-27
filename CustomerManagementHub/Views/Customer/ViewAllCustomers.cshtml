@@ -1,0 +1,157 @@
+﻿@model List<CustomerManagementHub.Data.Models.CustomerModel>
+@using CustomerManagementHub.Data.Models;
+@using Microsoft.AspNetCore.Identity;
+@{
+    ViewData["Title"] = "User List";
+    Layout = "_Layout";
+}
+@inject SignInManager<UserModel> SignInManager;
+@inject UserManager<UserModel> UserManager;
+
+
+<style>
+    /* Apply general styling to the table */
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+    }
+
+        /* Style table header */
+        .table thead {
+            background-color: #f2f2f2;
+        }
+
+        /* Style table header cells */
+        .table th {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Style table rows */
+        .table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Style table cells */
+        .table td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+    /* Limit the width of the 'About' column and add ellipsis for long text */
+    .about-column {
+        max-width: 150px; /* Adjust as needed */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: top;
+    }
+
+    /* Hover effect for table rows */
+    .table tbody tr:hover {
+        background-color: #e0e0e0;
+        cursor: pointer;
+    }
+
+</style>
+
+<h1>User List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th data-sort="Id">ID</th>
+            <th data-sort="number">Index</th>
+            <th>Age</th>
+            <th>Eye Color</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Company</th>
+            <th>E-mail</th>
+            <th>Phone</th>
+            <th>Address number</th>
+            <th>Street</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zipcode</th>
+            <th>About</th>
+            <th>Registered</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Tag 1</th>
+            <th>Tag 2</th>
+            <th>Tag 2</th>
+            <th>Tag 3</th>
+            <th>Tag 4</th>
+            <th>Tag 5</th>
+            <th>Tag 6</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user._id</td>
+                <td>@user.number</td>
+                <td>@user.Age</td>
+                <td>@user.EyeColor</td>
+                <td>@user.Name</td>
+                <td>@user.Gender</td>
+                <td>@user.Company</td>
+                <td>@user.Email</td>
+                <td>@user.Phone</td>
+                <td>@user.AddressNumber</td>
+                <td>@user.AddressStreet</td>
+                <td>@user.AddressCity</td>
+                <td>@user.AddressState</td>
+                <td>@user.AddressZipCode</td>
+                <td class="about-column">@user.About</td>
+                <td>@user.Registered</td>
+                <td>@user.Latitude</td>
+                <td>@user.Longitude</td>
+                <td>@user.Tags1</td>
+                <td>@user.Tags2</td>
+                <td>@user.Tags3</td>
+                <td>@user.Tags4</td>
+                <td>@user.Tags5</td>
+                <td>@user.Tags6</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Add event listener to table header cells with data-sort attribute
+        $(document).ready(function () {
+            $('.table th[data-sort]').click(function () {
+                sortTable($(this));
+            });
+        });
+
+        function sortTable(th) {
+            const table = th.closest('.table');
+            const columnIndex = th.index();
+            const sortOrder = th.hasClass('asc') ? -1 : 1;
+
+            // Reset sorting classes
+            table.find('th').removeClass('asc desc');
+
+            // Apply sorting class
+            th.addClass(sortOrder === 1 ? 'asc' : 'desc');
+
+            const rows = table.find('tbody tr').toArray();
+            rows.sort((a, b) => {
+                const cellA = $(a).find('td').eq(columnIndex).text();
+                const cellB = $(b).find('td').eq(columnIndex).text();
+                return sortOrder * cellA.localeCompare(cellB, undefined, { numeric: true, sensitivity: 'base' });
+            });
+
+            table.find('tbody').append(rows);
+        }
+    </script>
+}
