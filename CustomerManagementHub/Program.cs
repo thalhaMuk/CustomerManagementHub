@@ -2,11 +2,13 @@ using CustomerManagementHub.Controllers.API;
 using CustomerManagementHub.Controllers.Web;
 using CustomerManagementHub.Data;
 using CustomerManagementHub.Data.Models;
+using CustomerManagementHub.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -15,7 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Configure services
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
-    b => b.MigrationsAssembly("CustomerManagementHub")));
+    b => b.MigrationsAssembly("CustomerManagementHub.Data")));
 
 
 builder.Services.AddApiVersioning(options =>
@@ -27,8 +29,22 @@ builder.Services.AddApiVersioning(options =>
 
 builder.Services.AddIdentity<UserModel, IdentityRole>()
         .AddEntityFrameworkStores<ApplicationDbContext>()
-        .AddDefaultTokenProviders();
+.AddDefaultTokenProviders();
 
+var serviceProvider = builder.Services.BuildServiceProvider();
+var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+var userManager = serviceProvider.GetRequiredService<UserManager<UserModel>>();
+
+// Create the "User" role if it doesn't exist
+if (!await roleManager.RoleExistsAsync("User"))
+{
+    await roleManager.CreateAsync(new IdentityRole("User"));
+}
+// Create the "User" role if it doesn't exist
+if (!await roleManager.RoleExistsAsync("Admin"))
+{
+    await roleManager.CreateAsync(new IdentityRole("Admin"));
+}
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -65,6 +81,7 @@ builder.Services.AddAuthentication(options =>
         options.LoginPath = "/api/login"; 
     });
 
+builder.Services.AddScoped<ICustomerController, CustomerController>();
 
 // Build the application
 var app = builder.Build();

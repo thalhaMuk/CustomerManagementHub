@@ -87,9 +87,42 @@
                     <label for="ConfirmPassword">Confirm Password</label>
                     <input type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Enter your password">
                 </div>
+
+                <div class="form-group">
+                    <label>User Role</label>
+                    <input type="radio" id="UserRoleUser" name="UserRole" value="User" checked>
+                    <label for="UserRoleUser">User</label>
+                    <input type="radio" id="UserRoleAdmin" name="UserRole" value="Admin">
+                    <label for="UserRoleAdmin">Admin</label>
+                </div>
+
+                <!-- Add admin-specific fields -->
+                <div id="adminFields" style="display: none;">
+                    <div class="form-group">
+                        <label for="AdminUsername">Admin Username</label>
+                        <input type="text" id="AdminUsername" name="AdminUsername" placeholder="Enter admin username">
+                    </div>
+                    <div class="form-group">
+                        <label for="AdminPassword">Admin Password</label>
+                        <input type="password" id="AdminPassword" name="AdminPassword" placeholder="Enter admin password">
+                    </div>
+                </div>
                 <button class="btn-register" type="submit">Register</button>
             </form>
         </div>
     </div>
 </body>
+<script>
+    const userRoleRadio = document.getElementById('UserRoleUser');
+    const adminRoleRadio = document.getElementById('UserRoleAdmin');
+    const adminFields = document.getElementById('adminFields');
+
+    adminRoleRadio.addEventListener('change', () => {
+        if (adminRoleRadio.checked) {
+            adminFields.style.display = 'block';
+        } else {
+            adminFields.style.display = 'none';
+        }
+    });
+</script>
 </html>

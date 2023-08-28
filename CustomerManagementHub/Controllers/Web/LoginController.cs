@@ -51,7 +51,7 @@ namespace CustomerManagementHub.Controllers.Web
 
                     Response.Headers.Add("Authorization", "Bearer " + token);
 
-                    if (user.UserRole == "Admin")
+                    if (await _userManager.IsInRoleAsync(user, "Admin"))
                         return RedirectToAction("viewall", "Customer");
                     else
                     {

@@ -3,14 +3,15 @@ using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Authorization;
 using CustomerManagementHub.Controllers.Web;
+using CustomerManagementHub.Services;
 
 namespace CustomerManagementHub.Controllers.API
 {
     [ApiController]
-    [Authorize(Roles = "Admin, User")]
+    [Authorize]
     [Route("api/v{version:apiVersion}/[controller]")]
     [ApiVersion("1.0")]
-    public class CustomerController : Controller
+    public class CustomerController : Controller, ICustomerController
     {
         private readonly ApplicationDbContext _context;
         private readonly ILogger<CustomerController> _logger;
