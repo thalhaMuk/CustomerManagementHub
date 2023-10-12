@@ -1,0 +1,28 @@
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\bin\Debug\net6.0\CustomerManagementHub.DataAccess.deps.json
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\bin\Debug\net6.0\CustomerManagementHub.DataAccess.runtimeconfig.json
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\bin\Debug\net6.0\CustomerManagementHub.DataAccess.dll
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\bin\Debug\net6.0\CustomerManagementHub.DataAccess.pdb
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.AssemblyInfo.cs
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.dll
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\refint\CustomerManagementHub.DataAccess.dll
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.pdb
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.genruntimeconfig.cache
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\ref\CustomerManagementHub.DataAccess.dll
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\bin\Debug\net6.0\CustomerManagementHub.DataAccess.deps.json
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\bin\Debug\net6.0\CustomerManagementHub.DataAccess.runtimeconfig.json
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\bin\Debug\net6.0\CustomerManagementHub.DataAccess.dll
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\bin\Debug\net6.0\CustomerManagementHub.DataAccess.pdb
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.AssemblyInfo.cs
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.dll
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\refint\CustomerManagementHub.DataAccess.dll
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.pdb
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\CustomerManagementHub.DataAccess.genruntimeconfig.cache
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Data\obj\Debug\net6.0\ref\CustomerManagementHub.DataAccess.dll

@@ -1,0 +1,251 @@
+﻿@model IEnumerable<CustomerManagementHub.DataAccess.Models.CustomerModel>
+
+@{
+    ViewData["Title"] = "ViewAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+    }
+
+        .table thead {
+            background-color: #f2f2f2;
+        }
+
+        .table th {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .table td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+    .about-column {
+        max-width: 150px; 
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: top;
+    }
+
+    .table tbody tr:hover {
+        background-color: #e0e0e0;
+        cursor: pointer;
+    }
+
+</style>
+<h1>View All Customers</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EyeColor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Company)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Addressnumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Addressstreet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Addresscity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Addressstate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Addresszipcode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.About)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registered)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Latitude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Longitude)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tags0)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tags1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tags2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tags3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tags4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tags5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tags6)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Number)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EyeColor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Company)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Addressnumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Addressstreet)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Addresscity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Addressstate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Addresszipcode)
+                </td>
+                <td class="about-column">
+                    @Html.DisplayFor(modelItem => item.About)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Registered)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Latitude)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Longitude)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tags0)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tags1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tags2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tags3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tags4)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tags5)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tags6)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Add event listener to table header cells with data-sort attribute
+        $(document).ready(function () {
+            $('.table th[data-sort]').click(function () {
+                sortTable($(this));
+            });
+        });
+
+        function sortTable(th) {
+            const table = th.closest('.table');
+            const columnIndex = th.index();
+            const sortOrder = th.hasClass('asc') ? -1 : 1;
+
+            // Reset sorting classes
+            table.find('th').removeClass('asc desc');
+
+            // Apply sorting class
+            th.addClass(sortOrder === 1 ? 'asc' : 'desc');
+
+            const rows = table.find('tbody tr').toArray();
+            rows.sort((a, b) => {
+                const cellA = $(a).find('td').eq(columnIndex).text();
+                const cellB = $(b).find('td').eq(columnIndex).text();
+                return sortOrder * cellA.localeCompare(cellB, undefined, { numeric: true, sensitivity: 'base' });
+            });
+
+            table.find('tbody').append(rows);
+        }
+    </script>
+}

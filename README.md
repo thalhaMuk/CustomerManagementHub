@@ -1,5 +1,4 @@
-﻿# FidenzTraining
-
+# CustomerManagementHub 
 
 ## Project Overview
 
@@ -18,33 +17,33 @@ This project is a simple ASP.NET Core application that demonstrates user authent
 ## API Endpoints
 
 ### Edit Customer:
-- Endpoint: `https://localhost:7292/api/Customer/edit/{customerID}`
+- Endpoint: `api/v{version:apiVersion}/customer/edit/{customerId}`
 - Method: `PUT`
 - Input Parameters: `name`, `email`, or `phone number`
 - Output: Success or error status indicating whether customer data was updated.
 
 ### Get Distance:
-- Endpoint: `https://localhost:7292/api/Customer/getdistance/{customerID}`
+- Endpoint: `api/v{version:apiVersion}/customer/getdistance/{customerId}`
 - Method: `GET`
 - Input Parameters: `longitude`, `latitude`
 - Output: Returns distance calculated in kilometers from the given latitude and longitude.
 
 ### Search Customer:
-- Endpoint: `https://localhost:7292/api/Customer/search?searchText={searchText}`
+- Endpoint: `api/v{version:apiVersion}/customer/search`
 - Method: `GET`
 - Input Parameters: `searchText`
 - Output: Lists customer details matching the provided search text.
 
 ### Get Customer List Grouped by Zip Code:
-- Endpoint: `https://localhost:7292/api/Customer/groupedbyzipcode`
+- Endpoint: `api/v{version:apiVersion}/customer/groupedbyzipcode`
 - Method: `GET`
 - Input Parameters: None
 - Output: Lists all customers grouped by their "zip code."
 
-## Admin Page
+## View All
 
-An admin page is available to display the customer list from the database:
-- URL: `https://localhost:7292/api/Admin/Admin`
+View All page is available only for admins to display the customer list from the database:
+- URL: `api/v{version:apiVersion}/customer/viewall`
 
 ## Technologies Used
 

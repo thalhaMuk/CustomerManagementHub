@@ -1,0 +1,30 @@
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\bin\Debug\net6.0\CustomerManagementHub.Business.deps.json
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\bin\Debug\net6.0\CustomerManagementHub.Business.dll
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\bin\Debug\net6.0\CustomerManagementHub.Business.pdb
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\bin\Debug\net6.0\CustomerManagementHub.DataAccess.dll
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\bin\Debug\net6.0\CustomerManagementHub.DataAccess.pdb
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.csproj.AssemblyReference.cache
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.AssemblyInfo.cs
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.csproj.CopyComplete
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.dll
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\refint\CustomerManagementHub.Business.dll
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.pdb
+C:\Users\Dell\Desktop\Fidenz Training\Language\LevelOne\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\ref\CustomerManagementHub.Business.dll
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\bin\Debug\net6.0\CustomerManagementHub.Business.deps.json
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\bin\Debug\net6.0\CustomerManagementHub.Business.dll
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\bin\Debug\net6.0\CustomerManagementHub.Business.pdb
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\bin\Debug\net6.0\CustomerManagementHub.DataAccess.dll
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\bin\Debug\net6.0\CustomerManagementHub.DataAccess.pdb
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.AssemblyInfo.cs
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.csproj.CopyComplete
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.dll
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\refint\CustomerManagementHub.Business.dll
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\CustomerManagementHub.Business.pdb
+C:\Users\Dell\source\repos\CustomerManagementHub\CustomerManagementHub.Business\obj\Debug\net6.0\ref\CustomerManagementHub.Business.dll
