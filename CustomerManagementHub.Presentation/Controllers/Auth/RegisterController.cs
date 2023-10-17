@@ -6,7 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace CustomerManagementHub.Presentation.Controllers.Web
 {
     [ApiController]
-    [Route("register")]
+    [Route("api/v{version:apiVersion}/register")]
+    [ApiVersion("1.0")]
     public class RegisterController : Controller
     {
         private readonly IUserService _userService;
@@ -33,11 +34,11 @@ namespace CustomerManagementHub.Presentation.Controllers.Web
             {
                 if (ModelState.IsValid)
                 {
-                    var result = await _userService.RegisterUserAsync(model.UserName, model.Email, model.Password, model.UserRole, model.AdminUsername, model.AdminPassword);
+                    var result = await _userService.RegisterUserAsync(model);
 
                     if (result.Succeeded)
                     {
-                        return RedirectToAction("Login", "Login");
+                        return Redirect("/api/v1.0/Login");
                     }
                     else
                     {

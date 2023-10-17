@@ -1,5 +1,6 @@
 ﻿using CustomerManagementHub.Business.DTOs;
 using CustomerManagementHub.Business.Interfaces;
+using CustomerManagementHub.DataAccess.Enums;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -100,7 +101,7 @@ namespace CustomerManagementHub.Controllers.API
 
         // Endpoint: customer/viewall
         [HttpGet("viewall")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = nameof(Roles.Admin))]
         public async Task<IActionResult> ViewAll()
         {
             try

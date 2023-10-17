@@ -220,7 +220,6 @@
 @section scripts {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        // Add event listener to table header cells with data-sort attribute
         $(document).ready(function () {
             $('.table th[data-sort]').click(function () {
                 sortTable($(this));
@@ -232,10 +231,8 @@
             const columnIndex = th.index();
             const sortOrder = th.hasClass('asc') ? -1 : 1;
 
-            // Reset sorting classes
             table.find('th').removeClass('asc desc');
 
-            // Apply sorting class
             th.addClass(sortOrder === 1 ? 'asc' : 'desc');
 
             const rows = table.find('tbody tr').toArray();

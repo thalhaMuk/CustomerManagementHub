@@ -1,4 +1,5 @@
 ﻿using CustomerManagementHub.Business.Interfaces;
+using CustomerManagementHub.DataAccess.Enums;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 
@@ -84,8 +85,8 @@ namespace CustomerManagementHub.DataAccess.Repositories
         {
             try
             {
-                bool isAdmin = await _userManager.IsInRoleAsync(user, "Admin");
-                return isAdmin ? "Admin" : "User";
+                bool isAdmin = await _userManager.IsInRoleAsync(user, nameof(Roles.Admin));
+                return isAdmin ? nameof(Roles.Admin) : nameof(Roles.User);
             }
             catch (Exception ex)
             {

@@ -9,10 +9,5 @@ namespace CustomerManagementHub.Presentation.Controllers.API
         {
             return View();
         }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
     }
 }

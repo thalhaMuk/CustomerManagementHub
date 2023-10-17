@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using CustomerManagementHub.Business.Services;
+using CustomerManagementHub.DataAccess.Enums;
+using CustomerManagementHub.DataAccess.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 
@@ -32,13 +34,13 @@ namespace CustomerManagementHub.Business.Interfaces
             }
         }
 
-        public async Task<bool> ValidateUserCredentialsAsync(string email, string password)
+        public async Task<bool> ValidateUserCredentialsAsync(LoginModel userLogin)
         {
             try
             {
-                var user = await _userRepository.FindByEmailAsync(email);
+                var user = await _userRepository.FindByEmailAsync(userLogin.Username);
                 if (user == null) return false;
-                return await _userRepository.CheckPasswordAsync(user, password);
+                return await _userRepository.CheckPasswordAsync(user, userLogin.Password);
             }
             catch (Exception ex)
             {
@@ -47,21 +49,21 @@ namespace CustomerManagementHub.Business.Interfaces
             }
         }
 
-        public async Task<IdentityResult> RegisterUserAsync(string userName, string email, string password, string userRole, string adminUsername, string adminPassword)
+        public async Task<IdentityResult> RegisterUserAsync(RegisterModel model)
         {
             try
             {
-                var user = new IdentityUser { UserName = userName, Email = email };
-                var result = await _userRepository.CreateUserAsync(user, password);
+                var user = new IdentityUser { UserName = model.UserName, Email = model.Email };
+                var result = await _userRepository.CreateUserAsync(user, model.Password);
 
                 if (result.Succeeded)
                 {
-                    if (userRole == "Admin")
+                    if (model.UserRole == nameof(Roles.Admin))
                     {
-                        var admin = await _userRepository.FindByNameAsync(adminUsername);
-                        if (admin != null && await _userRepository.CheckPasswordAsync(admin, adminPassword))
+                        var admin = await _userRepository.FindByNameAsync(model.AdminUsername);
+                        if (admin != null && await _userRepository.CheckPasswordAsync(admin, model.AdminPassword))
                         {
-                            await _userRepository.AddToRoleAsync(user, "Admin");
+                            await _userRepository.AddToRoleAsync(user, nameof(Roles.Admin));
                         }
                         else
                         {
@@ -70,7 +72,7 @@ namespace CustomerManagementHub.Business.Interfaces
                     }
                     else
                     {
-                        await _userRepository.AddToRoleAsync(user, "User");
+                        await _userRepository.AddToRoleAsync(user, nameof(Roles.User));
                     }
                 }
                 return result;

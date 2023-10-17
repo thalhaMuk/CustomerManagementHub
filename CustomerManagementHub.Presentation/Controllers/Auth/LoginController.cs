@@ -10,11 +10,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using CustomerManagementHub.Business.Services;
 using CustomerManagementHub.DataAccess.Models;
+using CustomerManagementHub.DataAccess.Enums;
 
 namespace CustomerManagementHub.Presentation.Controllers.Web
 {
     [ApiController]
-    [Route("login")]
+    [Route("api/v{version:apiVersion}/login")]
+    [ApiVersion("1.0")]
     public class LoginController : Controller
     {
         private readonly IUserService _userService;
@@ -42,7 +44,7 @@ namespace CustomerManagementHub.Presentation.Controllers.Web
         {
             try
             {
-                var isValidUser = await _userService.ValidateUserCredentialsAsync(userLogin.Username, userLogin.Password);
+                var isValidUser = await _userService.ValidateUserCredentialsAsync(userLogin);
 
                 if (isValidUser)
                 {
@@ -51,11 +53,11 @@ namespace CustomerManagementHub.Presentation.Controllers.Web
                     var token = GenerateToken(user, role);
 
                     Response.Headers.Add("Authorization", "Bearer " + token);
-                    if(role == "Admin")
+                    if(role == nameof(Roles.Admin))
                     {
-                        return Redirect("https://localhost:7198/api/v1.0/Customer/viewAll");
+                        return Redirect("/api/v1.0/Customer/viewAll");
                     }
-                    return Redirect("https://localhost:7198/api/v1.0/Customer");
+                    return Redirect("/api/v1.0/Customer");
                 }
 
                 _logger.LogWarning($"Login attempt failed for username: {userLogin.Username}");
@@ -80,7 +82,7 @@ namespace CustomerManagementHub.Presentation.Controllers.Web
                 Response.Cookies.Delete(".AspNetCore.Session");
                 Response.Cookies.Delete("Identity.Application");
                 Response.Cookies.Delete(".AspNetCore.Application");
-                return Redirect("https://localhost:7198/Login");
+                return Redirect("/api/v1.0/Login");
             }
             catch (Exception ex)
             {
